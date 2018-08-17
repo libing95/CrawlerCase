@@ -27,7 +27,7 @@ def login(username, pwd):
     :param pwd:
     :return:
     '''
-    driver.get('http://yushou.suning.com/appoint/myAppoint.do')
+    driver.get('http://yushou.SunNing.com/appoint/myAppoint.do')
     driver.find_element_by_xpath('//a[@class="tab-item"]').click()
     driver.find_element_by_xpath('//input[@id="userName"]').send_keys(username)
     driver.find_element_by_xpath('//input[@id="password"]').send_keys(pwd)
@@ -40,7 +40,7 @@ def buy(buytime):
     while True:
         now = datetime.datetime.now()
         if now.strftime('%Y-%m-%d %H:%M:%S') >= buytime:
-          driver.get('https://product.suning.com/0000000000/10578094717.html')
+          driver.get('https://product.SunNing.com/0000000000/10578094717.html')
           time.sleep(1)
           try :
               # 错误的示范
